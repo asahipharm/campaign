@@ -347,6 +347,14 @@ body::before {
     text-align: center;
 }
 
+.character-stats-note {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--warm-gray);
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
 .character-stat-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-soft);
