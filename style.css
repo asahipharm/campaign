@@ -334,6 +334,11 @@ body::before {
     text-shadow: 0 2px 4px rgba(255, 176, 122, 0.3);
 }
 
+/* デスクトップ・タブレット版では改行を非表示 */
+.mobile-break {
+    display: none;
+}
+
 /* のあ専用スタイル - 青みのある紫 */
 .noa-card {
     border: 2px solid rgba(138, 43, 226, 0.3) !important;
@@ -1012,6 +1017,25 @@ body::before {
     text-align: center;
 }
 
+.sales-info {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, 
+        rgba(255, 215, 0, 0.15) 0%, 
+        rgba(255, 248, 220, 0.15) 100%);
+    border-radius: var(--border-radius);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    text-align: center;
+}
+
+.sales-text {
+    font-size: 1.1rem;
+    font-weight: var(--font-weight-medium);
+    color: #B8860B;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
 /* ===== セクション共通 ===== */
 .main {
     padding: 40px 0 80px 0;
@@ -1115,7 +1139,7 @@ body::before {
     width: 100%;
     height: auto;
     min-height: 200px;
-    max-height: 400px;
+    max-height: 350px;
     border-radius: var(--border-radius);
     margin-bottom: 20px;
     overflow: hidden;
@@ -1128,7 +1152,7 @@ body::before {
 .voice-illustration img {
     width: 100%;
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
     object-fit: contain;
     transition: transform var(--transition-medium);
 }
@@ -1465,12 +1489,38 @@ body::before {
         gap: 12px;
     }
     
+    /* スマホ版キャラ統計のフォントサイズ調整 */
+    .character-stats-title {
+        font-size: 1.6rem;
+    }
+    
+    .character-name {
+        font-size: 0.9rem;
+    }
+    
+    .character-count {
+        font-size: 1.6rem;
+    }
+    
+    .total-count {
+        font-size: 1rem;
+    }
+    
     .voice-card {
         padding: 24px;
     }
     
     .voice-illustration {
-        height: 150px;
+        height: auto;
+        min-height: 120px;
+        max-height: 200px;
+    }
+    
+    .voice-illustration img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
     }
     
     .stat-number {
@@ -1483,6 +1533,11 @@ body::before {
     
     .thank-you-message {
         font-size: 1.1rem;
+    }
+    
+    /* スマホ版のみで改行を表示 */
+    .mobile-break {
+        display: block;
     }
 }
 
