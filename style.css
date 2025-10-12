@@ -305,6 +305,21 @@ body::before {
     box-shadow: var(--shadow-gentle);
     border: 2px solid rgba(255, 176, 122, 0.1);
     transition: all var(--transition-fast);
+    position: relative;
+}
+
+.character-announcement {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    color: #333;
+    font-weight: var(--font-weight-medium);
+    opacity: 0.8;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
 }
 
 .character-stat-card:hover {
@@ -1485,8 +1500,15 @@ body::before {
     }
     
     .character-stats-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .character-stat-card {
+        padding: 12px 8px;
+        min-height: 80px;
     }
     
     /* スマホ版キャラ統計のフォントサイズ調整 */
