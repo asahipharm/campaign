@@ -1500,15 +1500,53 @@ body::before {
     }
     
     .character-stats-grid {
-        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto auto;
         gap: 8px;
-        max-width: 350px;
+        max-width: 300px;
         margin: 0 auto;
     }
     
     .character-stat-card {
         padding: 12px 8px;
         min-height: 80px;
+    }
+    
+    /* スマホ版でのうかキャラクターの配置 */
+    .uka-card {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    .noa-card {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .seth-card {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    .veil-card {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+    .airi-card {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    
+    .hiro-card {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+    .oto-card {
+        grid-column: 3;
+        grid-row: 3;
     }
     
     /* スマホ版キャラ統計のフォントサイズ調整 */
