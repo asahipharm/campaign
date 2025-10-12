@@ -258,6 +258,31 @@ body::before {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+.header-action {
+    margin-top: 30px;
+}
+
+.voices-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--white);
+    color: var(--primary-warm);
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    font-size: 1rem;
+    box-shadow: var(--shadow-gentle);
+    transition: all var(--transition-fast);
+}
+
+.voices-link-btn:hover {
+    background: var(--cream);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+}
+
 .description-main {
     color: rgba(255, 255, 255, 0.9);
     font-weight: var(--font-weight-regular);
@@ -688,6 +713,70 @@ body::before {
 /* デフォルトのコメントボタン（既存の色を保持） */
 .default-voice-card .comment-toggle {
     background: linear-gradient(135deg, var(--primary-warm), var(--secondary-soft)) !important;
+}
+
+/* キャラクター別コメント枠の色設定 */
+/* のあ色のコメント枠 - 青みのある紫 */
+.noa-voice-card .voice-comment {
+    border-left: 4px solid #8A2BE2 !important;
+    background: rgba(138, 43, 226, 0.05) !important;
+}
+.noa-voice-card .voice-comment::before {
+    color: #8A2BE2 !important;
+}
+
+/* セス色のコメント枠 - 赤みのある紫 */
+.seth-voice-card .voice-comment {
+    border-left: 4px solid #9400D3 !important;
+    background: rgba(148, 0, 211, 0.05) !important;
+}
+.seth-voice-card .voice-comment::before {
+    color: #9400D3 !important;
+}
+
+/* ベール色のコメント枠 - オレンジ */
+.veil-voice-card .voice-comment {
+    border-left: 4px solid #FF8C00 !important;
+    background: rgba(255, 140, 0, 0.05) !important;
+}
+.veil-voice-card .voice-comment::before {
+    color: #FF8C00 !important;
+}
+
+/* アイリ色のコメント枠 - 黄緑 */
+.airi-voice-card .voice-comment {
+    border-left: 4px solid #9ACD32 !important;
+    background: rgba(154, 205, 50, 0.05) !important;
+}
+.airi-voice-card .voice-comment::before {
+    color: #9ACD32 !important;
+}
+
+/* ヒロ色のコメント枠 - ピンク */
+.hiro-voice-card .voice-comment {
+    border-left: 4px solid #FF69B4 !important;
+    background: rgba(255, 105, 180, 0.05) !important;
+}
+.hiro-voice-card .voice-comment::before {
+    color: #FF69B4 !important;
+}
+
+/* うか色のコメント枠 - 赤 */
+.uka-voice-card .voice-comment {
+    border-left: 4px solid #DC143C !important;
+    background: rgba(220, 20, 60, 0.05) !important;
+}
+.uka-voice-card .voice-comment::before {
+    color: #DC143C !important;
+}
+
+/* おと色のコメント枠 - 緑よりの水色 */
+.oto-voice-card .voice-comment {
+    border-left: 4px solid #20B2AA !important;
+    background: rgba(32, 178, 170, 0.05) !important;
+}
+.oto-voice-card .voice-comment::before {
+    color: #20B2AA !important;
 }
 
 /* ===== キャンペーン詳細セクション ===== */
@@ -1500,53 +1589,15 @@ body::before {
     }
     
     .character-stats-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
-        max-width: 300px;
+        max-width: 350px;
         margin: 0 auto;
     }
     
     .character-stat-card {
         padding: 12px 8px;
         min-height: 80px;
-    }
-    
-    /* スマホ版でのうかキャラクターの配置 */
-    .uka-card {
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
-    .noa-card {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    .seth-card {
-        grid-column: 2;
-        grid-row: 2;
-    }
-    
-    .veil-card {
-        grid-column: 3;
-        grid-row: 2;
-    }
-    
-    .airi-card {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    .hiro-card {
-        grid-column: 2;
-        grid-row: 3;
-    }
-    
-    .oto-card {
-        grid-column: 3;
-        grid-row: 3;
     }
     
     /* スマホ版キャラ統計のフォントサイズ調整 */
