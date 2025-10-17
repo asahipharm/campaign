@@ -57,6 +57,14 @@ const voicesData = [
         comment: "今回CNPプリンスのマスコット🐍のおかげで初めてお迎えできました😊\n\nいつも素敵な作品をポストにupしてくれる、あけじーさん\nこれからも楽しみにしています🥰",
         illustration: "IMG_6688.webp",
         avatar: "み"
+    },
+    {
+        id: 8,
+        name: "ヤス",
+        date: "セス",
+        comment: "販売終了までもう少し\n頑張ってください❗️",
+        illustration: "IMG_6727.webp",
+        avatar: "ヤ"
     }
 ];
 
@@ -118,7 +126,8 @@ function getCharacterFromImage(illustration) {
         'IMG_6202.jpg': 'noa',      // Noa Plaid Short Sleeve3 #490
         'IMG_6203.jpg': 'airi',     // Iris Sailor Suit2 #004
         'IMG_6228.jpg': 'veil',     // Belle Enter Hoodie1 #462
-        'IMG_6300.webp': 'veil'     // Belle In Hoodie1 #695
+        'IMG_6300.webp': 'veil',    // Belle In Hoodie1 #695
+        'IMG_6727.webp': 'seth'     // Ces Blazer Tie Short Sleeve1a
     };
     
     return imageCharacterMap[illustration] || null;

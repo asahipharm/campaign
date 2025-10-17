@@ -517,28 +517,28 @@ body::before {
 
 /* のあ色の声カード */
 .noa-voice-card {
-    border: 2px solid rgba(138, 43, 226, 0.2) !important;
+    border: 2px solid rgba(75, 0, 130, 0.2) !important;
     background: linear-gradient(135deg, 
         rgba(255, 255, 255, 0.95) 0%, 
-        rgba(138, 43, 226, 0.08) 100%) !important;
+        rgba(75, 0, 130, 0.08) 100%) !important;
 }
 
 .noa-voice-card:hover {
-    border-color: rgba(138, 43, 226, 0.4) !important;
-    box-shadow: 0 8px 30px rgba(138, 43, 226, 0.15) !important;
+    border-color: rgba(75, 0, 130, 0.4) !important;
+    box-shadow: 0 8px 30px rgba(75, 0, 130, 0.15) !important;
 }
 
 /* セス色の声カード */
 .seth-voice-card {
-    border: 2px solid rgba(148, 0, 211, 0.2) !important;
+    border: 2px solid rgba(219, 112, 147, 0.2) !important;
     background: linear-gradient(135deg, 
         rgba(255, 255, 255, 0.95) 0%, 
-        rgba(148, 0, 211, 0.08) 100%) !important;
+        rgba(219, 112, 147, 0.08) 100%) !important;
 }
 
 .seth-voice-card:hover {
-    border-color: rgba(148, 0, 211, 0.4) !important;
-    box-shadow: 0 8px 30px rgba(148, 0, 211, 0.15) !important;
+    border-color: rgba(219, 112, 147, 0.4) !important;
+    box-shadow: 0 8px 30px rgba(219, 112, 147, 0.15) !important;
 }
 
 /* ベール色の声カード */
@@ -633,12 +633,12 @@ body::before {
 
 /* のあ色のアバター - 柔らかい青紫 */
 .noa-voice-card .voice-avatar {
-    background: linear-gradient(135deg, #B19CD9, #C8B5E0) !important;
+    background: linear-gradient(135deg, #9370DB, #B19CD9) !important;
 }
 
 /* セス色のアバター - 柔らかい紫 */
 .seth-voice-card .voice-avatar {
-    background: linear-gradient(135deg, #C39BD3, #D7BDE2) !important;
+    background: linear-gradient(135deg, #DDA0DD, #F0E0FF) !important;
 }
 
 /* ベール色のアバター - 柔らかいオレンジ */
@@ -680,12 +680,12 @@ body::before {
 
 /* のあ色のコメントボタン - 柔らかい青紫 */
 .noa-voice-card .comment-toggle {
-    background: linear-gradient(135deg, #B19CD9, #C8B5E0) !important;
+    background: linear-gradient(135deg, #9370DB, #B19CD9) !important;
 }
 
 /* セス色のコメントボタン - 柔らかい紫 */
 .seth-voice-card .comment-toggle {
-    background: linear-gradient(135deg, #C39BD3, #D7BDE2) !important;
+    background: linear-gradient(135deg, #DDA0DD, #F0E0FF) !important;
 }
 
 /* ベール色のコメントボタン - 柔らかいオレンジ */
@@ -726,20 +726,20 @@ body::before {
 /* キャラクター別コメント枠の色設定 */
 /* のあ色のコメント枠 - 青みのある紫 */
 .noa-voice-card .voice-comment {
-    border-left: 4px solid #8A2BE2 !important;
-    background: rgba(138, 43, 226, 0.05) !important;
+    border-left: 4px solid #4B0082 !important;
+    background: rgba(75, 0, 130, 0.05) !important;
 }
 .noa-voice-card .voice-comment::before {
-    color: #8A2BE2 !important;
+    color: #4B0082 !important;
 }
 
 /* セス色のコメント枠 - 赤みのある紫 */
 .seth-voice-card .voice-comment {
-    border-left: 4px solid #9400D3 !important;
-    background: rgba(148, 0, 211, 0.05) !important;
+    border-left: 4px solid #DB7093 !important;
+    background: rgba(219, 112, 147, 0.05) !important;
 }
 .seth-voice-card .voice-comment::before {
-    color: #9400D3 !important;
+    color: #DB7093 !important;
 }
 
 /* ベール色のコメント枠 - オレンジ */
@@ -1289,6 +1289,7 @@ body::before {
     max-height: 0;
     overflow: hidden;
     transition: all var(--transition-medium);
+    white-space: pre-line;
     opacity: 0;
 }
 
