@@ -75,7 +75,7 @@ const additionalVoicesData = [
 
 // ===== DOM要素の取得 =====
 let currentDisplayedVoices = 0;
-const voicesPerLoad = 7;
+const voicesPerLoad = voicesData.length; // 全てのデータを一度に表示
 let allVoices = [...voicesData];
 
 // ===== 初期化 =====
