@@ -103,16 +103,16 @@ function loadInitialVoices() {
     const voicesGrid = document.getElementById('voices-grid');
     if (!voicesGrid) return;
     
-    const initialVoices = allVoices.slice(0, voicesPerLoad);
-    currentDisplayedVoices = voicesPerLoad;
+    const initialVoices = allVoices; // 全てのデータを表示
+    currentDisplayedVoices = allVoices.length;
     
     initialVoices.forEach((voice, index) => {
         const voiceCard = createVoiceCard(voice, index);
         voicesGrid.appendChild(voiceCard);
     });
     
-    // もっと見るボタンの表示制御
-    updateLoadMoreButton();
+    // もっと見るボタンは削除済みのため、この処理は不要
+    // updateLoadMoreButton();
 }
 
 // ===== 画像別キャラクター判定関数 =====
@@ -204,11 +204,11 @@ function createVoiceCard(voice, index) {
 
 // ===== イベントリスナーの設定 =====
 function setupEventListeners() {
-    // もっと見るボタン
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', loadMoreVoices);
-    }
+    // もっと見るボタンは削除済みのため、この処理は不要
+    // const loadMoreBtn = document.getElementById('load-more-btn');
+    // if (loadMoreBtn) {
+    //     loadMoreBtn.addEventListener('click', loadMoreVoices);
+    // }
     
     // スムーススクロール
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
