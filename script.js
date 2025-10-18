@@ -5,7 +5,7 @@ const voicesData = [
     {
         id: 1,
         name: "すーみん",
-        date: "一番の推しはアイリ",
+        date: "一番の推しはベール",
         comment: "あけじーさんの描く作品がめちゃくちゃ好きです。好きすぎてアクスタやカレンダーも作っちゃいました。",
         illustration: "IMG_6203.jpg",
         avatar: "す"
