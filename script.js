@@ -65,6 +65,14 @@ const voicesData = [
         comment: "販売終了までもう少し\n頑張ってください❗️",
         illustration: "IMG_6727.webp",
         avatar: "ヤ"
+    },
+    {
+        id: 9,
+        name: "7u1(ﾅｳｲ)",
+        date: "アイリです🕳️",
+        comment: "アイリはもちろんですが、どのキャラクターも本当に魅力的で、毎回ワクワクしながら楽しませてもらっていました✨\nNOA genesisが終わってしまうのは寂しいですが、次の挑戦を楽しみにしています🌱",
+        illustration: "IMG_7024.webp",
+        avatar: "7"
     }
 ];
 
