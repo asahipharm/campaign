@@ -73,6 +73,14 @@ const voicesData = [
         comment: "アイリはもちろんですが、どのキャラクターも本当に魅力的で、毎回ワクワクしながら楽しませてもらっていました✨\nNOA genesisが終わってしまうのは寂しいですが、次の挑戦を楽しみにしています🌱",
         illustration: "IMG_7024.webp",
         avatar: "7"
+    },
+    {
+        id: 10,
+        name: "neigura(ネイグラ)",
+        date: "箱推し（タイプの違う子たちが一緒にいつつ、それぞれでらしさを発揮しているのが好きなのです）",
+        comment: "NOA Genesis販売も残りわずか！最後までガンバです！\nその後の活動も応援してます！好きです！！",
+        illustration: "IMG_7089.webp",
+        avatar: "n"
     }
 ];
 
@@ -135,7 +143,9 @@ function getCharacterFromImage(illustration) {
         'IMG_6203.jpg': 'airi',     // Iris Sailor Suit2 #004
         'IMG_6228.jpg': 'veil',     // Belle Enter Hoodie1 #462
         'IMG_6300.webp': 'veil',    // Belle In Hoodie1 #695
-        'IMG_6727.webp': 'seth'     // Ces Blazer Tie Short Sleeve1a
+        'IMG_6727.webp': 'seth',    // Ces Blazer Tie Short Sleeve1a
+        'IMG_7024.webp': 'airi',    // アイリ推しの7u1さんの画像
+        'IMG_7089.webp': 'veil'     // ベール色で表示するneiguraさんの画像
     };
     
     return imageCharacterMap[illustration] || null;
