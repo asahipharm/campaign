@@ -81,6 +81,14 @@ const voicesData = [
         comment: "NOA Genesis販売も残りわずか！最後までガンバです！\nその後の活動も応援してます！好きです！！",
         illustration: "IMG_7089.webp",
         avatar: "n"
+    },
+    {
+        id: 11,
+        name: "MIST 💎",
+        date: "メイド＋セス様です💎",
+        comment: "おくすり手帳持ってなくていつも「持ってますか？」「持ってません」のやりとりをしてるのを思い出しました🤣",
+        illustration: "IMG_7104.webp",
+        avatar: "M"
     }
 ];
 
@@ -124,6 +132,12 @@ function loadInitialVoices() {
     
     initialVoices.forEach((voice, index) => {
         const voiceCard = createVoiceCard(voice, index);
+        
+        // 最新の投稿（最後の投稿）にIDを追加
+        if (index === initialVoices.length - 1) {
+            voiceCard.id = 'latest-voice';
+        }
+        
         voicesGrid.appendChild(voiceCard);
     });
     
@@ -145,7 +159,8 @@ function getCharacterFromImage(illustration) {
         'IMG_6300.webp': 'veil',    // Belle In Hoodie1 #695
         'IMG_6727.webp': 'seth',    // Ces Blazer Tie Short Sleeve1a
         'IMG_7024.webp': 'airi',    // アイリ推しの7u1さんの画像
-        'IMG_7089.webp': 'veil'     // ベール色で表示するneiguraさんの画像
+        'IMG_7089.webp': 'veil',    // ベール色で表示するneiguraさんの画像
+        'IMG_7104.webp': 'seth'     // セス推しのMIST💎さんの画像
     };
     
     return imageCharacterMap[illustration] || null;
