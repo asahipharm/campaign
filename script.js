@@ -89,6 +89,22 @@ const voicesData = [
         comment: "おくすり手帳持ってなくていつも「持ってますか？」「持ってません」のやりとりをしてるのを思い出しました🤣",
         illustration: "IMG_7104.webp",
         avatar: "M"
+    },
+    {
+        id: 12,
+        name: "人生の旅人 たくみさん🌟初代移住DAOファウンダー(鳥取県佐治地区)",
+        date: "セス",
+        comment: "初期から見ていたけど、自分の好きなキャラが結構逃して手に入れられなかったwww\n\n最近ヒロに推しキャラが変わりつつあるｗｗ。",
+        illustration: "IMG_7176.webp",
+        avatar: "人"
+    },
+    {
+        id: 13,
+        name: "なべっち",
+        date: "箱推し",
+        comment: "NOA Genesisのお陰で経験したことのない\n時の流れを味わうことができました✨\nイケハヤさんの仰るように、新しい体験\nこそ生きる醍醐味✨\n７７７日のチャレンジが伝説に🌈",
+        illustration: "IMG_7177.webp",
+        avatar: "な"
     }
 ];
 
@@ -160,7 +176,9 @@ function getCharacterFromImage(illustration) {
         'IMG_6727.webp': 'seth',    // Ces Blazer Tie Short Sleeve1a
         'IMG_7024.webp': 'airi',    // アイリ推しの7u1さんの画像
         'IMG_7089.webp': 'veil',    // ベール色で表示するneiguraさんの画像
-        'IMG_7104.webp': 'seth'     // セス推しのMIST💎さんの画像
+        'IMG_7104.webp': 'seth',    // セス推しのMIST💎さんの画像
+        'IMG_7176.webp': 'airi',    // アイリ色で表示するたくみさんの画像
+        'IMG_7177.webp': 'uka'      // ウカ色で表示するなべっちさんの画像
     };
     
     return imageCharacterMap[illustration] || null;
