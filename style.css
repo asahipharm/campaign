@@ -289,6 +289,7 @@ body::before {
     gap: 8px;
     background: linear-gradient(135deg, var(--accent-orange) 0%, #f39c2b 100%);
     color: var(--white);
+    border: 2px solid var(--white);
     padding: 12px 24px;
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -345,6 +346,36 @@ body::before {
         rgba(255, 245, 238, 0.9) 100%);
     padding: 40px 0;
     backdrop-filter: blur(5px);
+}
+
+.completion-message {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: var(--font-weight-bold);
+    background: linear-gradient(135deg, #ffd700 0%, #ff6b35 50%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    100% {
+        transform: scale(1.02);
+        filter: brightness(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .completion-message {
+        font-size: 1.6rem;
+    }
 }
 
 .character-stats-title {
@@ -892,6 +923,23 @@ body::before {
     line-height: 1.6;
     color: var(--soft-gray);
     margin-bottom: 24px;
+}
+
+.campaign-image {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.campaign-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition-medium);
+}
+
+.campaign-image img:hover {
+    transform: scale(1.02);
 }
 
 .campaign-details-link {
