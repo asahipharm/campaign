@@ -105,6 +105,30 @@ const voicesData = [
         comment: "NOA Genesisのお陰で経験したことのない\n時の流れを味わうことができました✨\nイケハヤさんの仰るように、新しい体験\nこそ生きる醍醐味✨\n７７７日のチャレンジが伝説に🌈",
         illustration: "IMG_7177.webp",
         avatar: "な"
+    },
+    {
+        id: 14,
+        name: "ちょびすけ＠AI音楽生成を楽しんでます",
+        date: "ヒロちゃん（可愛い！）",
+        comment: "あけじーさんへ\nNOA Genesis完売おめでとうございます🎉\n１日１点 777点すごいです\nこれからも応援しています💪",
+        illustration: "IMG_7247.webp",
+        avatar: "ち"
+    },
+    {
+        id: 15,
+        name: "チャン嫁🇯🇵Kawaiichanyome",
+        date: "アイリ",
+        comment: "この度はNOA完売おめでとうございます㊗️🎉今日はどの子かな？この組み合わせ可愛い！と毎日楽しみでした😊お疲れ様でした！！",
+        illustration: "IMG_7245.webp",
+        avatar: "チ"
+    },
+    {
+        id: 16,
+        name: "だんく｜クリプトニンジャ最新情報",
+        date: "みんな好きですけど、あえて絞るならアイリかな。",
+        comment: "NOAついに777点完売しましたね。\n本当におめでとうございます🎉\n\n完売までたどりつくことができたのはプロジェクトを支える皆さん、そしてあけじーさん達の頑張りだと思います。本当に素敵です。そして、おつかれさまでした✨👏\n\n私も1人のNOAファンとして、これからも応援してきます！\nNOAがもっと多くの人に知られて、羽ばたいていけますように💖",
+        illustration: "IMG_7246.webp",
+        avatar: "だ"
     }
 ];
 
@@ -178,7 +202,10 @@ function getCharacterFromImage(illustration) {
         'IMG_7089.webp': 'veil',    // ベール色で表示するneiguraさんの画像
         'IMG_7104.webp': 'seth',    // セス推しのMIST💎さんの画像
         'IMG_7176.webp': 'airi',    // アイリ色で表示するたくみさんの画像
-        'IMG_7177.webp': 'uka'      // ウカ色で表示するなべっちさんの画像
+        'IMG_7177.webp': 'uka',     // ウカ色で表示するなべっちさんの画像
+        'IMG_7247.webp': 'noa',     // のあ色で表示するちょびすけさんの画像
+        'IMG_7245.webp': 'uka',     // ウカ色で表示するチャン嫁さんの画像
+        'IMG_7246.webp': 'airi'     // アイリ色で表示するだんくさんの画像
     };
     
     return imageCharacterMap[illustration] || null;
