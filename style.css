@@ -1782,6 +1782,19 @@ body::before {
         flex-direction: column;
         text-align: center;
     }
+    
+    /* スライダーのスマホ対応 */
+    .image-slider,
+    .footer-image-slider {
+        height: 100px;
+    }
+    
+    .slider-item,
+    .footer-slider-item {
+        width: 70px;
+        height: 100px;
+        margin: 0 8px;
+    }
 }
 
 /* スマートフォン */
@@ -1825,6 +1838,19 @@ body::before {
     
     .character-stats-note {
         font-size: 0.65rem;
+    }
+    
+    /* スライダーのさらに小さなスマホ対応 */
+    .image-slider,
+    .footer-image-slider {
+        height: 80px;
+    }
+    
+    .slider-item,
+    .footer-slider-item {
+        width: 60px;
+        height: 80px;
+        margin: 0 6px;
     }
     }
     
