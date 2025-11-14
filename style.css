@@ -49,6 +49,118 @@
     --transition-slow: 0.8s ease;
 }
 
+/* ===== Image Slider ===== */
+.image-slider {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-soft), var(--secondary-warm));
+    position: relative;
+    box-shadow: 0 2px 8px rgba(255, 176, 122, 0.1);
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+    animation: slideRight 60s linear infinite;
+    will-change: transform;
+}
+
+.slider-item {
+    flex-shrink: 0;
+    width: 85px;
+    height: 120px;
+    margin: 0 10px;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+    box-shadow: var(--shadow-gentle);
+    transition: transform var(--transition-medium);
+    background: var(--white);
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--border-radius-medium);
+    background: var(--white);
+}
+
+.slider-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ===== Footer Image Slider ===== */
+.footer-image-slider {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-soft), var(--secondary-warm));
+    position: relative;
+    box-shadow: 0 -2px 8px rgba(255, 176, 122, 0.1);
+}
+
+.footer-slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.footer-slider-track {
+    display: flex;
+    height: 100%;
+    animation: slideLeft 60s linear infinite;
+    will-change: transform;
+}
+
+.footer-slider-item {
+    flex-shrink: 0;
+    width: 85px;
+    height: 120px;
+    margin: 0 10px;
+    border-radius: var(--border-radius-medium);
+    overflow: hidden;
+    box-shadow: var(--shadow-gentle);
+    transition: transform var(--transition-medium);
+    background: var(--white);
+}
+
+.footer-slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--border-radius-medium);
+    background: var(--white);
+}
+
+.footer-slider-item:hover {
+    transform: scale(1.05);
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* ===== リセット&ベーススタイル ===== */
 * {
     margin: 0;

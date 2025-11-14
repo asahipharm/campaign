@@ -145,6 +145,38 @@ const voicesData = [
         comment: "完売おめでとうございます🥳\n私は古参ではありませんが、純粋に可愛くて惹かれました😳\nご夫婦が描かれる漫画やイラストもキャラたちの個性が溢れていて、益々好きになりました😍",
         illustration: "IMG_7271.webp",
         avatar: "す"
+    },
+    {
+        id: 19,
+        name: "こじこじ💞",
+        date: "（みんなだいすきだけど）ヒロ",
+        comment: "NOAGenesis の完売改めておめでとうございます🥳🌈私の人生において初めての推し活で、念願のケモミミセブン達成やったー🙌✨これからも7人の任務を応援します📣✨",
+        illustration: "IMG_7293.webp",
+        avatar: "こ"
+    },
+    {
+        id: 20,
+        name: "ツマ🌈CryptoNinjaささがねオーナー",
+        date: "セス様",
+        comment: "発売前からセス様推しで、早押しに負けまくりガス代だけ持って行かれていたところやっとお迎えできたセス様なのでお迎えできた時はとっても嬉しかったです🥰あらためて完売おめでとうございます🎉 お疲れ様でした🍵これからも可愛い７人の活躍を楽しみにしています💕",
+        illustration: "IMG_7294.webp",
+        avatar: "ツ"
+    },
+    {
+        id: 21,
+        name: "🍅Babooばぶ",
+        date: "うかちゃん🦊",
+        comment: "セス様もヒロもアイリも…選べないくらいみんな好きなのですが、初期ミントさせて頂いたうかちゃん🦊で応募します🙌\n\n滑り込みセーフ、あさひさんの素敵なお薬手帳応募させて頂きます",
+        illustration: "IMG_7295.webp",
+        avatar: "🍅"
+    },
+    {
+        id: 22,
+        name: "Katou",
+        date: "おと🐰",
+        comment: "私にとって特別な宝物の #NOAGenesis \n\n11/11には777点が完売！👏\nそして本日、FiNANCiEコミュニティがオープン🎉\n本当におめでとうございます！🌈\n\nあけじーさんの益々のご活躍を心より応援しております🙏✨",
+        illustration: "IMG_7296.webp",
+        avatar: "K"
     }
 ];
 
@@ -162,6 +194,12 @@ let allVoices = [...voicesData];
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🌟 NOA Genesis キャンペーン応募者の声サイトが読み込まれました！');
     
+    // 画像スライダーの初期化
+    initializeImageSlider();
+    
+    // フッター画像スライダーの初期化
+    initializeFooterImageSlider();
+    
     // 初期コンテンツの読み込み
     loadInitialVoices();
     
@@ -177,6 +215,73 @@ document.addEventListener('DOMContentLoaded', function() {
     // スクロールアニメーションの監視開始
     observeScrollAnimations();
 });
+
+// ===== 画像スライダーの初期化 =====
+function initializeImageSlider() {
+    const sliderTrack = document.getElementById('sliderTrack');
+    if (!sliderTrack) return;
+    
+    // 選択された画像のリスト
+    const selectedImages = [
+        'IMG_6200.webp', 'IMG_6201.webp', 'IMG_6202.webp', 'IMG_6203.webp', 'IMG_6228.webp',
+        'IMG_6300 2.webp', 'IMG_6688 2.webp', 'IMG_6727 2.webp', 'IMG_7024 2.webp', 'IMG_7089 2.webp',
+        'IMG_7104 2.webp', 'IMG_7176 2.webp', 'IMG_7177 2.webp', 'IMG_7245 2.webp', 
+        'IMG_7246 2.webp', 'IMG_7247 2.webp',
+        'IMG_7257.webp', 'IMG_7271 2.webp', 'IMG_7293 2.webp', 'IMG_7294 2.webp', 'IMG_7295 2.webp', 'IMG_7296 2.webp'
+    ];
+    
+    // 画像を3回繰り返して無限ループ効果を作成
+    const tripledImages = [...selectedImages, ...selectedImages, ...selectedImages];
+    
+    tripledImages.forEach((imageSrc, index) => {
+        const sliderItem = document.createElement('div');
+        sliderItem.className = 'slider-item';
+        
+        const img = document.createElement('img');
+        img.src = imageSrc;
+        img.alt = `NOA Genesis イラスト`;
+        img.loading = 'lazy';
+        
+        sliderItem.appendChild(img);
+        sliderTrack.appendChild(sliderItem);
+    });
+}
+
+// ===== フッター画像スライダーの初期化 =====
+function initializeFooterImageSlider() {
+    const footerSliderTrack = document.getElementById('footerSliderTrack');
+    if (!footerSliderTrack) return;
+    
+    // 同じ画像リストを使用
+    const selectedImages = [
+        'IMG_6200.webp', 'IMG_6201.webp', 'IMG_6202.webp', 'IMG_6203.webp', 'IMG_6228.webp',
+        'IMG_6300 2.webp', 'IMG_6688 2.webp', 'IMG_6727 2.webp', 'IMG_7024 2.webp', 'IMG_7089 2.webp',
+        'IMG_7104 2.webp', 'IMG_7176 2.webp', 'IMG_7177 2.webp', 'IMG_7245 2.webp', 
+        'IMG_7246 2.webp', 'IMG_7247 2.webp',
+        'IMG_7257.webp', 'IMG_7271 2.webp', 'IMG_7293 2.webp', 'IMG_7294 2.webp', 'IMG_7295 2.webp', 'IMG_7296 2.webp'
+    ];
+    
+    // 画像を3回繰り返して無限ループ効果を作成
+    const tripledImages = [...selectedImages, ...selectedImages, ...selectedImages];
+    
+    tripledImages.forEach((imageSrc, index) => {
+        const sliderItem = document.createElement('div');
+        sliderItem.className = 'footer-slider-item';
+        
+        const img = document.createElement('img');
+        img.src = imageSrc;
+        img.alt = `NOA Genesis イラスト`;
+        img.loading = 'lazy';
+        
+        // 画像が読み込めない場合の処理
+        img.onerror = function() {
+            sliderItem.style.display = 'none';
+        };
+        
+        sliderItem.appendChild(img);
+        footerSliderTrack.appendChild(sliderItem);
+    });
+}
 
 // ===== 初期の応募者の声を読み込み =====
 function loadInitialVoices() {
@@ -223,7 +328,11 @@ function getCharacterFromImage(illustration) {
         'IMG_7245.webp': 'uka',     // ウカ色で表示するチャン嫁さんの画像
         'IMG_7246.webp': 'airi',    // アイリ色で表示するだんくさんの画像
         'IMG_7256.webp': 'uka',     // ウカ色で表示するこたえっくすさんの画像
-        'IMG_7271.webp': 'noa'      // のあ色で表示するすみさんの画像
+        'IMG_7271.webp': 'noa',     // のあ色で表示するすみさんの画像
+        'IMG_7293.webp': 'hiro',    // ヒロ色で表示するこじこじさんの画像
+        'IMG_7294.webp': 'seth',    // セス色で表示するツマさんの画像
+        'IMG_7295.webp': 'uka',     // ウカ色で表示するBabooばぶさんの画像
+        'IMG_7296.webp': 'oto'      // おと色で表示するKatouさんの画像
     };
     
     return imageCharacterMap[illustration] || null;
